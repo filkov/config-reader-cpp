@@ -1,0 +1,7 @@
+This class provide simple and easy way for retrieving data from configuration
+file, and parsing by sections (if exist) and keys with values. Comment line
+begining with #, section name concluded in brackets [ and ], key separated
+from value by =. All those simbols defaults and can be changed when instance
+created.
+Comments, empty line, empty sections, keys without values are ignored. All
+spaces around sections name, keys and values deleted, but not touched inside.
