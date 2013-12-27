@@ -34,8 +34,8 @@ typedef std::map < std::string, std::map < std::string, std::string > > MAP_SECT
 class FConfigReader
 {
 protected:
-	FConfigReader(){};
-	FConfigReader(const FConfigReader& orig){};
+	FConfigReader(){}
+	FConfigReader(const FConfigReader& orig){}
 public:
 	static FConfigReader* CreateInstance(const std::string& file, const char com = '#', const char delim = '=', const char open = '[', const char close = ']');
 	virtual ~FConfigReader();
